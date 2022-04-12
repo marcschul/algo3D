@@ -1,6 +1,8 @@
 .Nav {
-  height: 50px;
+  overflow: hidden;
+  background-color: hotpink;
+  position: fixed;
+  top: 0;
   width: 100%;
-  background-color: red;
   text-align: center;
 }
