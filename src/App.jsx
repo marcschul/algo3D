@@ -11,16 +11,12 @@ function App() {
   const blocks = useStore(state => state.blocks);
 
   return (
-    <div className="App">
+    <>
       <Nav />
-
-      <div className="Canvas">
-        <Canvas>
-          <Block />
-        </Canvas>
-      </div>
-
-    </div>
+      <Canvas>
+        <Block />
+      </Canvas>
+    </>
   );
 }
 
