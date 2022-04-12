@@ -15,6 +15,7 @@ function App() {
       <Canvas>
         <ambientLight intensity={1} />
         <Block />
+        <Block postion={[1, 1]}/>
       </Canvas>
     </>
   );
