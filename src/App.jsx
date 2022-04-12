@@ -1,8 +1,9 @@
 import useStore from './hooks/store';
+import { Canvas } from "@react-three/fiber";
+
 
 import Block from './components/Block';
 import Nav from './components/Nav';
-import { Canvas } from "@react-three/fiber";
 
 function App() {
 
