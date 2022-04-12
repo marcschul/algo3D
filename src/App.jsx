@@ -1,5 +1,3 @@
-import React from 'react';
-import './App.css';
 import useStore from './hooks/store';
 
 import Block from './components/Block';
@@ -14,6 +12,7 @@ function App() {
     <>
       <Nav />
       <Canvas>
+        <ambientLight intensity={1} />
         <Block />
       </Canvas>
     </>
