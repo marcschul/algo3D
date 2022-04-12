@@ -5,7 +5,7 @@ algo3D is a visual representation of path finding algorithms in a 3 dimensional 
 To-Do List
 ==
 - [x] Setup project
-- [ ] do this
+- [ ] Create 3D grid holding blocks
 
 Available Scripts
 ==
