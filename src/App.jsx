@@ -1,6 +1,6 @@
 import useStore from './hooks/store';
 import { Canvas } from "@react-three/fiber";
-
+import { OrbitControls } from '@react-three/drei';
 
 import Block from './components/Block';
 import Nav from './components/Nav';
@@ -13,9 +13,18 @@ function App() {
     <>
       <Nav />
       <Canvas>
+        < OrbitControls />
         <ambientLight intensity={1} />
-        <Block />
-        <Block postion={[1, 1]}/>
+        <Block position={[-1.25, -1.25, 0]}/>
+        <Block position={[1.25, 1.25, 0]}/>
+        <Block position={[1.25, 0, 0]}/>
+        <Block position={[-1.25, 0, 0]}/>
+        <Block position={[0, 1.25, 0]}/>
+        <Block position={[0, -1.25, 0]}/>
+        <Block position={[-1.25, 1.25, 0]}/>
+        <Block position={[1.25, -1.25, 0]}/>
+
+        <Block position={[0, 0, 0]}/>
       </Canvas>
     </>
   );

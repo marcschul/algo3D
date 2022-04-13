@@ -6,12 +6,14 @@ export default function Block(props) {
   const boxMesh = useRef();
   const [active, setActive] = useState(false);
   const [hovered, setHover] = useState(false);
+  const boxPosition = props.position;
 
+  console.log('boxPosition',boxPosition)
   useFrame(({ clock }) => {
-    console.log(clock.getElapsedTime());
-    boxMesh.current.rotation.x = clock.getElapsedTime();
-    boxMesh.current.rotation.y = clock.getElapsedTime();
-    boxMesh.current.rotation.z = clock.getElapsedTime();
+    // console.log(clock.getElapsedTime());
+    // boxMesh.current.rotation.x = clock.getElapsedTime();
+    // boxMesh.current.rotation.y = clock.getElapsedTime();
+    // boxMesh.current.rotation.z = clock.getElapsedTime();
   });
 
 
@@ -24,7 +26,8 @@ export default function Block(props) {
             setActive(!active);
             console.log(active)
           }}
-          scale={hovered ? 1.5 : 1}
+          scale={hovered ? 1.25 : 1}
+          position={boxPosition}
           >  
             <boxBufferGeometry 
               args={[1,1,1]} 
