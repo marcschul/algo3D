@@ -15,15 +15,19 @@ function App() {
       <Canvas>
         < OrbitControls />
         <ambientLight intensity={1} />
-        <Block position={[-1.25, -1.25, 0]}/>
-        <Block position={[1.25, 1.25, 0]}/>
-        <Block position={[1.25, 0, 0]}/>
-        <Block position={[-1.25, 0, 0]}/>
-        <Block position={[0, 1.25, 0]}/>
-        <Block position={[0, -1.25, 0]}/>
-        <Block position={[-1.25, 1.25, 0]}/>
-        <Block position={[1.25, -1.25, 0]}/>
+        {/* hardcoded grid */}
 
+        {/* top-left */}
+        <Block position={[-0.125, 0.125, 0]}/>
+        {/* top-middle */}
+        <Block position={[0, 0.125, 0]}/>
+        {/* top-right */}
+        <Block position={[0.125, 0.125, 0]}/>
+        <Block position={[-0.125, -0.125, 0]}/>
+        <Block position={[0.125, 0, 0]}/>
+        <Block position={[-0.125, 0, 0]}/>
+        <Block position={[0, -0.125, 0]}/>
+        <Block position={[0.125, -0.125, 0]}/>
         <Block position={[0, 0, 0]}/>
       </Canvas>
     </>

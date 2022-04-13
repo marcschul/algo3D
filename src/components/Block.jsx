@@ -26,7 +26,7 @@ export default function Block(props) {
             setActive(!active);
             console.log(active)
           }}
-          scale={hovered ? 1.25 : 1}
+          scale={hovered ? 0.125 : 0.1}
           position={boxPosition}
           >  
             <boxBufferGeometry 
