@@ -1,34 +1,20 @@
-import useStore from './hooks/store';
+import useStore from "./hooks/store";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from '@react-three/drei';
+import { OrbitControls } from "@react-three/drei";
 
-import Block from './components/Block';
-import Nav from './components/Nav';
+import BlocksContainer from "./components/BlocksContainer";
+import Nav from "./components/Nav";
 
 function App() {
-
-  const blocks = useStore(state => state.blocks);
+  const blocks = useStore((state) => state.blocks);
 
   return (
     <>
       <Nav />
       <Canvas>
-        < OrbitControls />
+        <OrbitControls makeDefault />
         <ambientLight intensity={1} />
-        {/* hardcoded grid */}
-
-        {/* top-left */}
-        <Block position={[-0.125, 0.125, 0]}/>
-        {/* top-middle */}
-        <Block position={[0, 0.125, 0]}/>
-        {/* top-right */}
-        <Block position={[0.125, 0.125, 0]}/>
-        <Block position={[-0.125, -0.125, 0]}/>
-        <Block position={[0.125, 0, 0]}/>
-        <Block position={[-0.125, 0, 0]}/>
-        <Block position={[0, -0.125, 0]}/>
-        <Block position={[0.125, -0.125, 0]}/>
-        <Block position={[0, 0, 0]}/>
+        <BlocksContainer />
       </Canvas>
     </>
   );

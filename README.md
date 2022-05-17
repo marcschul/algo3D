@@ -2,21 +2,18 @@
 
 algo3D is a visual representation of path finding algorithms in a 3 dimensional plane including the x, y, z axes. The app allows users calculate the space-time complexity with bigO.
 
-To-Do List
-==
-- [x] Setup project
-- [ ] Create 3D grid holding blocks
+# To-Do List
 
-Available Scripts
-==
+- [x] Setup project
+- [x] Create 3D grid holding blocks
+- [ ] Move rotate axis to middle of plane
+
+# Available Scripts
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
 
