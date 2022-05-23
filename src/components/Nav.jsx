@@ -1,5 +1,4 @@
 import "./Nav.css";
-import { useNewBlocksArr } from "../hooks/useBlocksArr";
 
 export default function Nav(props) {
   const setBlocks = props.setBlocks;

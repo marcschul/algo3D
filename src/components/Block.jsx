@@ -1,4 +1,3 @@
-import { useFrame } from "@react-three/fiber";
 import { useRef, useState } from "react";
 
 export default function Block(props) {
